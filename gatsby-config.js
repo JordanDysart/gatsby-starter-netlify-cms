@@ -73,5 +73,12 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: 'sUp33'
+        // delete or `undefined` to disable password protection
+      }
+    },
   ],
 }
